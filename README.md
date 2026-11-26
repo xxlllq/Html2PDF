@@ -56,8 +56,8 @@
 # 或用脚本
   # 单文件：python scripts/html_to_pdf.py input.html -o output.pdf --verify
   # 整个文件夹（含子文件）
-   cd /d "D:\Formula-PDF-main"
-   for /r "D:\待转换HTML" %F in (*.html) do python "scripts\html_to_pdf.py" "%F" -o "%~dpnF.pdf" --verify
+   将待转换文件夹复制到scripts同目录，然后执行下面的命令
+   for /r "待转换文件夹" %F in (*.html) do python "scripts\html_to_pdf.py" "%F" -o "%~dpnF.pdf" --verify
 
 ```
 
