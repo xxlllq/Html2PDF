@@ -27,7 +27,7 @@ def check_prerequisites():
     
     return edge_path
 
-def html_to_pdf(html_path, output_path=None, timeout_seconds=30):
+def html_to_pdf(html_path, output_path=None, timeout_seconds=60):
     """
     将HTML转为PDF（Edge无头模式）
     
