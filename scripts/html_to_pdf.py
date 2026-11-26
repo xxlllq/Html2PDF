@@ -63,6 +63,7 @@ def html_to_pdf(html_path, output_path=None, timeout_seconds=30):
         f"--virtual-time-budget={timeout_seconds * 1000}",
         f"--print-to-pdf={output_path}",
         "--no-margins",
+        "--no-pdf-header-footer",
         "--disable-gpu",
         "--disable-software-rasterizer",
         file_url
