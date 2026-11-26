@@ -54,7 +54,11 @@
 & 'edge' --headless=new --virtual-time-budget=30000 --print-to-pdf="output.pdf" --no-margins "file:///C:/path/to/input.html"
 
 # 或用脚本
-python scripts/html_to_pdf.py input.html -o output.pdf --verify
+  # 单文件：python scripts/html_to_pdf.py input.html -o output.pdf --verify
+  # 整个文件夹（含子文件）
+   cd /d "D:\Formula-PDF-main"
+   for /r "D:\待转换HTML" %F in (*.html) do python "scripts\html_to_pdf.py" "%F" -o "%~dpnF.pdf" --verify
+
 ```
 
 ### 3. 🎉 完成
